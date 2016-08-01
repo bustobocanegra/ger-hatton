@@ -1,0 +1,30 @@
+{
+  "name": "ger-hatton",
+  "description": "Ger Hatton's website",
+  "scripts": {},
+  "env": {
+    "BUILDPACK_PRELAUNCH_METEOR": {
+      "required": true
+    },
+    "BUILDPACK_VERBOSE": {
+      "required": true
+    },
+    "ROOT_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "mongolab"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/AdmitHub/meteor-buildpack-horse.git"
+    }
+  ]
+}
